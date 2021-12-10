@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19.javaScript对象数据类型</title>
+</head>
+<body>
+    <!-- 
+        对象object{
+        创建 var obj = {hair:'',eye:''}
+        操作{
+            增 对象名.键 = 值 or 对象名['键'] = 值
+            删 delete 对象名.键 or delete 对象名['键']
+            改 对象名.键 = 值 or 对象名['键'] = 值
+            查 对象名.键 or 对象名['键']
+        }
+    } 
+    -->
+    <script>
+        //创建一个对象
+        var obj = {
+            //创建三个键值对
+            a:100,
+            b:true,
+            c:'hello world'
+        }
+        //输出看一下
+        console.log(obj)
+    </script>
+    
+    <script>
+        //增
+        //准备一个空对象
+        var obj = {
+
+        }
+        //输出看一下
+        console.log(obj)
+        //增加一个 键值对
+        //语法一
+        obj.name = '小肥脸'
+        //语法二
+        obj['age'] = 18
+        console.log(obj)
+    </script>
+        <script>
+            //删
+            //准备一个空对象
+            var obj = {}
+            obj.name = '销毁了'
+            obj['age']=18
+            obj.gender = '男'
+            //输出看一下
+            console.log(obj)
+            //删除一个 键值对
+            //语法一
+            delete obj.name
+            //语法二
+            delete obj['age']
+            //输出看一下
+            console.log(obj)
+        </script>
+        <script>
+           //改 
+           //准备一个空对象
+           var obj = {}
+            obj.name = '销毁了'
+            obj['age']=18
+            obj.gender = '男'
+            //输出看一下
+            console.log(obj)
+            //修改一个 键值对
+            //语法一
+            obj.name = '公羊无衣'
+            //语法二
+            obj['age'] = 30
+            //输出看一下
+            console.log(obj)
+        </script>
+        <script>
+            //查
+            //准备一个空对象
+           var obj = {}
+            obj.name = '销毁了'
+            obj['age']=18
+            obj.gender = '男'
+            //输出看一下
+            console.log(obj)
+            //修改一个 键值对
+            //语法一
+            console.log(obj.name)
+            //语法二
+            console.log(obj['age'])
+         
+          
+        </script>
+</body>
+</html>

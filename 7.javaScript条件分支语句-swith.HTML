@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.javaScript条件分支语句-swith</title>
+</head>
+<body>
+    <script>
+        // 1.找到和已知条件 完全匹配 的选项执行
+        // 2.执行完毕代码需要写 break ，不然会向下穿透
+        // 3.可以书写一个 default ，会在所有选项都不匹配的时候执行
+        // 4.当发生穿透效果的时候，会从第一个 满足条件 的选项开始向下穿透
+        //准备一个变量，当作已知条件
+        var foot = 40
+        //使用switch语句进行选择
+        switch(foot){
+            case 37 :
+                console.log('买一双37号的鞋')
+        
+            case 40:
+                console.log('买一双40号的鞋')
+               
+            case 41:
+                console.log('买一双41号的鞋')
+              
+            case 42:
+                console.log('买一双42号的鞋')
+                break
+            default:
+            console.log('我去别家店里看一看')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.javaScript数据类型转换</title>
+</head>
+<body>
+    <!--
+        转数值
+        转字符串
+        转布尔
+    -->
+    <script>
+        //转数值
+        //Number()
+        //parseInt()
+        //parseFloat()
+        var s1 = '100';
+        console.log(s1)
+        console.log(typeof s1)
+
+        var n1 = Number(s1)
+        console.log(n1)
+        console.log(typeof n1)
+
+        var s1 = 'abc';
+        console.log(s1)
+        console.log(typeof s1)
+
+        var n1 = Number(s1)
+        console.log(n1)
+        console.log(typeof n1)
+
+        var s1 = '100abc';
+        console.log(s1)
+        console.log(typeof s1)
+
+        var n1 = parseInt(s1)
+        console.log(n1)
+        console.log(typeof n1)
+
+        var s1 = '100.122abc';
+        console.log(s1)
+        console.log(typeof s1)
+
+        var n1 = parseFloat(s1)
+        console.log(n1)
+        console.log(typeof n1)
+
+        //转字符串
+        //String()
+        //toString()
+        var b1 = true
+        console.log(b1)
+        console.log(typeof b1)
+
+        var s1 = String(b1)
+        console.log(s1)
+        console.log(typeof s1)
+
+        var b1 = true
+        console.log(b1)
+        console.log(typeof b1)
+
+        var s1 = b1.toString()
+        console.log(s1)
+        console.log(typeof s1)
+        
+        //转布尔
+        //Boolean()
+        //false:0 NaN '' undefined null
+        //其他所有都会转成true
+        var s1 = 'abc'
+        console.log(s1)
+        console.log(typeof s1)
+
+        var b1 = Boolean(s1)
+        console.log(b1)
+        console.log(typeof b1)
+
+
+
+
+    </script>
+</body>
+</html>

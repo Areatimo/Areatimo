@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11.javaScript循环结构语句-do while</title>
+</head>
+<body>
+    <script>
+    // 当初始变量在条件 以内 的时候，while 和 do while 循环时一样的
+    // 当初始变量在条件 以外 的时候
+    // while 循环一次都不执行
+    // do while 循环会执行一次
+        //定义初始变量 n
+        var n = 0
+        //条件判断 n < 总数
+        do {
+            //一段重复的代码
+            console.log('走一个石板')
+            //改变初始值
+            n++
+        } while(n < 3) 
+        //后续代码
+        console.log('继续走后面的路')
+      </script>
+</body>
+</html>

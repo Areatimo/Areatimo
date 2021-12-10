@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.javaScript案例-一年中的第几天</title>
+</head>
+<body>
+    <script>
+        //准备三个变量，分别表示 年 月 日
+        var year = 2008
+        var month = 8
+        var date = 8
+        //在准备一个变量接受统计结果
+        var total = 0
+        //使用 switch 叠加月份信息
+        switch(month){
+            case 12:total += 30;
+            case 11:total += 31;
+            case 10:total += 30;
+            case 9:total += 31;
+            case 8:total += 31;
+            case 7:total += 30;
+            case 6:total += 31;
+            case 5:total += 30;
+            case 4:total += 31;
+            case 3:
+                if(year % 4 ===0 && year % 100 !== 0 || year % 400 === 0) {
+                    total += 29
+                } else {
+                    total += 28    
+                }
+            case 2:total += 31;
+        }
+        total += date
+        console.log(total)
+    </script>
+</body>
+</html>

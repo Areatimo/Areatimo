@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15.javaScript案例-循环的练习</title>
+</head>
+<body>
+    <script>
+        //页面打印正方形
+    //把输出一行的代码重复执行9次
+    for(var j = 1;j <= 9; j++){
+        //尝试输出一行9个*
+        //开始：1
+        //结束：<=9
+        //步长：1
+        for(var i = 1;i<=9;i++){
+            document.write('* ')
+        }
+        //每输出完毕一行*以后需要一个换行
+        document.write('</br>')
+    }
+    </script>
+    <script>
+        //页面打印三角形
+        for(var j = 1;j <= 9; j++){
+        //尝试输出一行9个*
+        //开始：1
+        //结束：<=9
+        //步长：1
+        for(var i = 1;i<=j;i++){
+            document.write('* ')
+        }
+        //每输出完毕一行*以后需要一个换行
+        document.write('</br>')
+    }
+    </script>
+    <script>
+        //页面打印九九乘法表
+        for(var j = 1;j <= 9; j++){
+            for(var i = 1;i<=j;i++){
+                document.write(i+'*'+j+'='+i*j+' ')
+            }
+        //每输出完毕一行*以后需要一个换行
+        document.write('</br>')
+        }
+    </script>
+    <script>
+        //寻找最大公约数
+        //准备两个变量，保存两个数字
+        var max = 24
+        var min = 12
+        //从相对小的数字向1进行循环
+        for(var i = min;i>=1;i--){
+            //输出看一下i
+            // console.log(i)
+            //判断能被max和min整除
+            if(max % i === 0 && min % i === 0){
+                //输出这个数字
+                console.log(i)
+                //结束循环
+                break
+            }
+        }
+    </script>
+    <script>
+        //寻找最小公倍数
+        //准备两个变量，保存两个数字
+        var max = 15
+        var min = 10
+        //从相对大的数字向 两数乘积 进行循环 步长为 相对大的数字
+        for(var i = max;i <= min * max;i += max){
+            //输出看一下i
+            // console.log(i)
+            //只要能整除 相对小的数字 就可以
+            if(i % min === 0 ){
+                console.log(i)
+                //直接结束循环
+                break
+            }
+        }
+    </script>
+</body>
+</html>

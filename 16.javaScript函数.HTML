@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16.javaScript函数</title>
+</head>
+<body>
+    <!-- 
+    javaScript函数
+    1.函数定义阶段
+        把代码装进 盒子 里
+    2.函数调用阶段
+        把 盒子 里面的代码执行 
+    -->
+    <!-- 
+    1.函数就是js中的一个数据类型而已
+    2.函数定义阶段，函数体内代码 不执行 调用一次执行一次
+    3.形参：就是定义在 函数内部 使用的变量
+    实参：就是函数调用时给 形参赋值 的内容
+    4.在函数内使用 return 给函数添加一个结果作为函数的 返回值
+    -->
+    <script>
+        //定义一个函数，添加两个形参
+        function fn(a,b){
+            console.log('fn函数')
+            console.log(a)
+            console.log(b)
+        }
+        //调用函数,添加两个实参
+        fn(10,20)
+        //每次调用调值
+        fn(100,200)
+    </script>
+        <script>
+            function fn1(n) {
+                //准备变量接受阶乘结果
+                var total = 1
+                while(n >= 1){
+                    total *= n
+                    n--
+                }
+                return total
+            } 
+            // 调用这个函数
+            var r1 = fn1(12)
+            var r2 = fn1(10)
+            console.log(r1,r2)
+        </script>
+</body>
+</html>

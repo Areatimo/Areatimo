@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.javaScript条件分支语句-if</title>
+</head>
+<body>
+    <script>
+        // if(){}
+        // if(){}else{}
+        // if(){}else if(){}
+        // if(){}else if(){}else{}
+        var money = 10000
+        //满足条件就执行if的{},不满足就执行else的{}
+        if(money >= 5000){
+            console.log('米其林三星')
+        } else {
+            console.log('只能选择回家')
+        }
+
+        var money = 0000
+        //满足哪一个if的条件,就执行哪一个条件后买你的{}
+        //前面的如果满足了，就不去考虑后面的内容了
+        if(money >= 5000){
+            console.log('米其林三星')
+        } else if ( money >= 500 ){
+            console.log('吃快餐')
+        } else {
+            console.log('只能回家')
+        }
+    </script>
+</body>
+</html>

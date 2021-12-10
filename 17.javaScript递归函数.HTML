@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17.javaScript递归函数</title>
+</head>
+<body>
+    <!-- 
+    一个函数调用了自身，并设置了结束条件
+    这个函数才是一个正确的递归函数
+    -->
+    <script>
+        function fn(n) {
+            if(n === 1) return 1;
+            return n * fn(n-1);
+        }
+         var r1 = fn(10)
+         console.log(r1)
+    </script>
+    <script>
+        function fn(n) {
+            if(n==1||n==2) return 1;
+            return fn(n-1) + fn(n-2);
+        }
+        var r1 = fn()
+         console.log(r1)
+    </script>
+</body>
+</html>

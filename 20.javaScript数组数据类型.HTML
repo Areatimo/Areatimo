@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20.javaScript数组数据类型</title>
+</head>
+<body>
+    数组：有序的 数据 的集合
+    从左到右 依次递增 0 1 2 3
+    <!-- <script>
+        //创建一个数组
+        var arr = [100,true,'hello world'];
+        //输出一下
+        console.log( arr )
+    </script> -->
+    数组的操作{
+        长度的操作{
+            获取长度：语法 数组名.length
+            设置长度：语法 数组名.length = 数字
+        }
+        数据的操作{
+            获取数据：语法 数组名[索引]
+            设置数据：语法 数组名[索引] = 值
+        }
+    }
+    
+    <script>
+        //准备一个数组
+        var arr = [100,200,300,400]
+        //输出一下
+        console.log(arr)
+        //获取数组的长度
+        console.log(arr.length)
+        
+        //修改一下数组的长度
+        arr.length=3
+        //输出数组
+        console.log(arr)
+        //输出数组的长度
+        console.log(arr.length)
+    </script>
+
+    <script>
+        //准备一个数组
+        var arr= [100,200,300,400]
+        //输出一下
+        console.log(arr)
+        //输出数组中索引为2的数据
+        console.log(arr[2])
+
+        //修改数组中索引2的数据
+        arr[2] = 5678
+        //再次输出一下
+        console.log(arr[2])
+    </script>
+    
+    数组的遍历
+    <script>
+        //准备一个数组
+        var arr = [100,200,300,400,500]
+        //输出数组
+        console.log(arr)
+
+        //书写循环
+        for(var i = 0;i<arr.length;i++){
+            //输出循环控制变量
+            console.log(arr[i])
+        }
+    </script>
+</body>
+</html>

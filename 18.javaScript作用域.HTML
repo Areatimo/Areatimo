@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18.javaScript作用域</title>
+</head>
+<body>
+    <!-- 
+    作用域
+    范围{
+        全局作用域：一个页面就是一个全局作用域
+        私有作用域：只有函数 生成私有作用域
+    }
+    使用{
+        定义：声明在什么位置的变量是哪一个作用域的变量
+        访问：自己有用自己的，自己没有用父级的，以此类推，到全局都没有就报错
+        赋值：自己给自己赋值，自己没有给父级的赋值，以此类推，到全局都没有，定义为全局再赋值
+    }
+     -->
+    <script>
+        var n1 =100  //全局
+        function a() {
+            var n2 = 200 //私有 a
+            function b() {
+                var n3 = 300 //私有 b
+            }
+        }
+        function c() {
+            var n4 = 400 // 私有 c
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.javaScript运算符</title>
+</head>
+<body>
+    <!--
+    算数运算符{+加{拼接} -减 *乘 /除 %取余}进行数学运算
+
+    赋值运算符
+    = 赋值
+    +=
+    -=
+    *=
+    /=
+    %=
+
+    比较运算符 true false
+    >
+    <
+    >=
+    <=
+    ==
+    ===
+    !=
+    !==
+
+
+    逻辑运算符
+    //两边都为true 结果才是true 否则都是false
+    && 与 运算
+
+    // 任意一边为true 结果才是true
+    ||  或 运算
+
+    //本身是true 结果就是false 本身是false 结果是true
+    ! 非 运算
+
+    自增自减运算符
+    ++ 自增
+    -- 自减
+    -->
+    <script>
+        //算数运算符
+        var n1 = 10
+        var n2 = 20
+        //计算n1 + n2的结果，赋值给n3
+        var n3 = n1 + n2
+        console.log(n3)
+        console.log(typeof n3)
+
+        var n1 = '10'
+        var n2 = 20
+        //计算n1 + n2的结果，赋值给n3
+        var n3 = n1 + n2
+        console.log(n3)
+        console.log(typeof n3)
+
+        //赋值运算符
+        var n1 = 10
+        n1 += 10
+        console.log(n1)
+
+        //比较运算符
+        //==:只比较 值 是不是相等，不考虑数据类型
+        console.log(10 == 10)
+        console.log(10 == '10')
+        //===:必须要 值 和 数据类型 都相等，才是true
+        console.log(10 === 10)
+        console.log(10 === '10')
+
+        console.log(10 != 10)
+        console.log(10 != '10')
+        console.log(10 !== 10)
+        console.log(10 !== '10')
+
+
+    </script>
+</body>
+</html>

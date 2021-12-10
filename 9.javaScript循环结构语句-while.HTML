@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9.javaScript循环结构语句-while</title>
+</head>
+<body>
+    <!-- 
+    1.while会 重复 的执行一段代码，直到重复 结束 才会继续执行后续的代码
+    2.千万要书写 改变初始值 的代码，不然会出现 死循环
+    3.在循环内， 初始值，条件判断 和 改变初始值 都能控制循环的次数
+    4.再循环内，循环控制变量是一组 有规律 的数字 
+    -->
+    <script>
+    
+      //定义初始变量 n
+      var n = 0
+      //条件判断 n < 总数
+      while(n < 3) {
+          //一段重复的代码
+          console.log('走一个石板')
+          //改变初始值
+          n++
+      }  
+      //后续代码
+      console.log('继续走后面的路')
+    </script>
+</body>
+</html>
